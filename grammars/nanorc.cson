@@ -1,0 +1,86 @@
+'comment': 'Nanorc Syntax'
+'fileTypes': [
+  'nanorc'
+]
+'scopeName' : 'source.nanorc'
+'name': 'nanorc'
+
+'patterns': [
+  {
+    'include': '#comment'
+  }
+  {
+    'match': 'i?color b?r?i?g?h?t? ?(green|red|blue|white|yellow|cyan|magenta|black)'
+    'name': 'constant'
+  }
+  {
+    'match': '(start|end)'
+    'name': 'variable'
+  }
+  {
+    'match': '(syntax|include)'
+    'name': 'keyword'
+  }
+  {
+    'begin': '"'
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.definition.string.begin.nanorc'
+    'end': '"'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.string.end.nanorc'
+    'name': 'string.quoted.double.nanorc'
+    'patterns': [
+      {
+        'include': 'punctuation.definition.string.begin.nanorc'
+      }
+      {
+        'include': 'punctuation.definition.string.end.nanorc'
+      }
+      {
+        'match': '\\\\.'
+        'name': 'constant.character.escape.nanorc'
+      }
+    ]
+  }
+  {
+    'begin': '\''
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.definition.string.begin.nanorc'
+    'end': '\''
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.string.end.nanorc'
+    'name': 'string.quoted.double.nanorc'
+    'patterns': [
+      {
+        'include': 'punctuation.definition.string.begin.nanorc'
+      }
+      {
+        'include': 'punctuation.definition.string.end.nanorc'
+      }
+      {
+        'match': '\\\\.'
+        'name': 'constant.character.escape.nanorc'
+      }
+    ]
+  }
+]
+'repository':
+  'comment':
+    'patterns': [
+      {
+        'captures':
+          '1':
+            'name': 'comment.line.number-sign.nanorc'
+          '2':
+            'name': 'punctuation.definition.comment.nanorc'
+          '3':
+            'name': 'comment.line.semi-colon.nanorc'
+          '4':
+            'name': 'punctuation.definition.comment.nanorc'
+        'match': '((#).*$\\n?)'
+      }
+    ]

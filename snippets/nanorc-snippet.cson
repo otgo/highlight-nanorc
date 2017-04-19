@@ -1,0 +1,7 @@
+'.source.nanorc':
+  'start-end begin':
+    'prefix': 'star',
+    'body': 'start="${1:start}"\tend="${2:end}"'
+  'syntax begin':
+    'prefix': 'syn',
+    'body': 'syntax "name" "\\\\.extension"'
