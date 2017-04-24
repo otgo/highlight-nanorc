@@ -5,3 +5,48 @@
   'syntax begin':
     'prefix': 'syn',
     'body': 'syntax "name" "\\\\.extension"'
+
+  'color begin':
+    'prefix': 'col',
+    'body': 'color ${1:blue}'
+
+  'icolor begin':
+    'prefix': 'icol',
+    'body': 'icolor ${1:blue}'
+
+  # bright colors
+  'brightred color':
+    'prefix': 'brig',
+    'body': 'brightred'
+
+  'brightblue color':
+    'prefix': 'brig',
+    'body': 'brightblue'
+
+  'brightwhite color':
+    'prefix': 'brig',
+    'body': 'brightwhite'
+
+  'brightblue color':
+    'prefix': 'brig',
+    'body': 'brightblue'
+
+  'brightgreen color':
+    'prefix': 'brig',
+    'body': 'brightgreen'
+
+  'brightyellow color':
+    'prefix': 'brig',
+    'body': 'brightyellow'
+
+  'brightcyan color':
+    'prefix': 'brig',
+    'body': 'brightcyan'
+
+  'brightmagenta color':
+    'prefix': 'brig',
+    'body': 'brightmagenta'
+
+  'brightblack color':
+    'prefix': 'brig',
+    'body': 'brightblack'

@@ -10,7 +10,7 @@
     'include': '#comment'
   }
   {
-    'match': 'i?color b?r?i?g?h?t? ?(green|red|blue|white|yellow|cyan|magenta|black)'
+    'match': 'i?color b?r?i?g?h?t?(green|red|blue|white|yellow|cyan|magenta|black),?b?r?i?g?h?t?(green|red|blue|white|yellow|cyan|magenta|black)? '
     'name': 'constant'
   }
   {
